@@ -17,6 +17,7 @@ public class TestController extends HttpServlet{
 		protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 			// TODO Auto-generated method stub
 			var xxx = req.getParameter("xxx");
+			System.out.println("測試2");
 			req.setAttribute("nickname", xxx);
 			req.getRequestDispatcher("/index.jsp").forward(req, resp);
 		}
